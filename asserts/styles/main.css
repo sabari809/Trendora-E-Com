@@ -91,9 +91,11 @@ header{
 
 .logo-session{
     position: absolute;
-    top: 5%;
+    background-color: inherit;
+    top: 25%;
     right: 0;
     padding: 1em;
+    z-index: 1000;
     color: var(--bg);
 }
 

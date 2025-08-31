@@ -7,6 +7,11 @@ mainPage.addEventListener("click",()=>{
     window.location.href='index.html'
 })
 
+const carticon = document.querySelector(".cart")
+carticon.addEventListener("click",()=>{
+    window.location.href = "cart.html"
+})
+
 handburger.addEventListener("click",()=>{
     logoSession.classList.add("active")
     handburger.style.display = "none"
