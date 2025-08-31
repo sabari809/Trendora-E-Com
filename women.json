@@ -1,0 +1,92 @@
+[
+  {
+    "id": 201,
+    "name": "Floral Summer Dress",
+    "image": "https://littleboxindia.com/cdn/shop/files/Floral_Print_Tie_Front_Bell_Sleeve_Mesh_Crop_Top_1_540x.png?v=1751958036",
+    "category": "Dress",
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "price": 1599,
+    "rating": 4.7
+  },
+  {
+    "id": 202,
+    "name": "Women’s Denim Jacket",
+    "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSKqOA_hEg10Qs7pIzJN6lz_8VaWjoN1ttQRlhjPmjbs-5Oir9dXEzKSHjUcVXcLXdb60DcSiPEjMioT5dEUTb4khlf-eKITzW_fSWrCpA",
+    "category": "Jacket",
+    "sizes": ["S", "M", "L", "XL"],
+    "price": 2299,
+    "rating": 4.5
+  },
+  {
+    "id": 203,
+    "name": "Cotton Kurti Top",
+    "image": "https://i.pinimg.com/1200x/a5/39/e8/a539e856add3cec040cd8e4024726877.jpg",
+    "category": "Kurti",
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "price": 1299,
+    "rating": 4.4
+  },
+  {
+    "id": 204,
+    "name": "Women’s Slim Fit Jeans",
+    "image": "https://www.veromoda.in/cdn/shop/files/127971201_g0.jpg?v=1745661025&width=500",
+    "category": "Jeans",
+    "sizes": ["26", "28", "30", "32", "34", "36"],
+    "price": 1999,
+    "rating": 4.6
+  },
+  {
+    "id": 205,
+    "name": "Embroidered Kurta Set",
+    "image": "https://i.pinimg.com/736x/f3/6f/80/f36f801496c68e6444ab5202c0a5ee43.jpg",
+    "category": "Ethnic",
+    "sizes": ["S", "M", "L", "XL"],
+    "price": 2499,
+    "rating": 4.8
+  },
+  {
+    "id": 206,
+    "name": "Women’s Sports T-Shirt",
+    "image": "https://www.technosport.in/cdn/shop/products/W114_20Lilac_2.webp?v=1747899989&width=600",
+    "category": "Activewear",
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "price": 799,
+    "rating": 4.3
+  },
+  {
+    "id": 207,
+    "name": "Women’s Track Pants",
+    "image": "https://m.media-amazon.com/images/I/41H6LnyowdL._SY741_.jpg",
+    "category": "Activewear",
+    "sizes": ["S", "M", "L", "XL"],
+    "price": 1199,
+    "rating": 4.4
+  },
+  {
+    "id": 208,
+    "name": "Women’s Winter Sweater",
+    "image": "https://imagescdn.vanheusenindia.com/img/app/product/3/39828795-16495891.jpg?auto=format&w=390",
+    "category": "Sweater",
+    "sizes": ["S", "M", "L", "XL"],
+    "price": 1799,
+    "rating": 4.6
+  },
+  {
+    "id": 209,
+    "name": "Women’s Saree",
+    "image": "https://i.pinimg.com/1200x/07/f0/aa/07f0aa8b755158e7fbb0cb629f383c90.jpg",
+    "category": "Ethnic",
+    "sizes": ["Free"],
+    "price": 2899,
+    "rating": 4.7
+  },
+  {
+    "id": 210,
+    "name": "Women’s Crop Top",
+    "image": "https://i.pinimg.com/736x/71/5e/2b/715e2b633187ddc5d112d222eb61e78d.jpg",
+    "category": "Top",
+    "sizes": ["XS", "S", "M", "L"],
+    "price": 699,
+    "rating": 4.2
+  }
+]

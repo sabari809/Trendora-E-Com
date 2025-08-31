@@ -1,0 +1,92 @@
+[
+  {
+    "id": 301,
+    "name": "Boys Cotton T-Shirt",
+    "image": "https://cdn.shopify.com/s/files/1/0646/0211/2255/files/5c279679-1d0b-499c-9550-a57f629410ce.jpg?v=1751977208&width=604",
+    "category": "T-Shirt",
+    "sizes": ["2-3Y", "4-5Y", "6-7Y", "8-9Y", "10-12Y"],
+    "price": 599,
+    "rating": 4.5
+  },
+  {
+    "id": 302,
+    "name": "Girls Party Dress",
+    "image": "https://m.media-amazon.com/images/I/71kedCnBp0L._SY741_.jpg",
+    "category": "Dress",
+    "sizes": ["2-3Y", "4-5Y", "6-7Y", "8-9Y", "10-12Y"],
+    "price": 1499,
+    "rating": 4.8
+  },
+  {
+    "id": 303,
+    "name": "Kids Hoodie",
+    "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSolb3lSkNZ0kg2DB-ilr4VUUxR6GO88Eqh_Cg-b3_eRtqk2Ml3uCVVWrdfG-xMl6iYKCs-0Q2MSQKrbMVhCI7XAofASm_pHNyp68Y-GtQ",
+    "category": "Hoodie",
+    "sizes": ["4-5Y", "6-7Y", "8-9Y", "10-12Y"],
+    "price": 999,
+    "rating": 4.6
+  },
+  {
+    "id": 304,
+    "name": "Boys Cargo Shorts",
+    "image": "https://media.landmarkshops.in/cdn-cgi/image/h=730,w=540,q=85,fit=cover/max-new/1000015341329-Beige-BEIGE-1000015341329_06-2100.jpg",
+    "category": "Shorts",
+    "sizes": ["2-3Y", "4-5Y", "6-7Y", "8-9Y", "10-12Y"],
+    "price": 799,
+    "rating": 4.4
+  },
+  {
+    "id": 305,
+    "name": "Girls Cotton Frock",
+    "image": "https://i.pinimg.com/1200x/8e/9c/8a/8e9c8a024e72ed23de5a625ef7ffd5c4.jpg",
+    "category": "Frock",
+    "sizes": ["2-3Y", "4-5Y", "6-7Y", "8-9Y"],
+    "price": 1299,
+    "rating": 4.7
+  },
+  {
+    "id": 306,
+    "name": "Boys Joggers",
+    "image": "https://i.pinimg.com/1200x/5e/41/b7/5e41b70ace12b7c0b1609063bbafcf53.jpg",
+    "category": "Joggers",
+    "sizes": ["4-5Y", "6-7Y", "8-9Y", "10-12Y"],
+    "price": 899,
+    "rating": 4.5
+  },
+  {
+    "id": 307,
+    "name": "Girls Leggings",
+    "image": "https://i.pinimg.com/736x/95/8c/7f/958c7fcb19857273b1f467b6446a24b2.jpg",
+    "category": "Leggings",
+    "sizes": ["2-3Y", "4-5Y", "6-7Y", "8-9Y", "10-12Y"],
+    "price": 499,
+    "rating": 4.3
+  },
+  {
+    "id": 308,
+    "name": "Boys Ethnic Kurta Set",
+    "image": "https://i.pinimg.com/736x/c5/12/7d/c5127d3c588e0001b24794269b1669b1.jpg",
+    "category": "Ethnic",
+    "sizes": ["2-3Y", "4-5Y", "6-7Y", "8-9Y", "10-12Y"],
+    "price": 1599,
+    "rating": 4.6
+  },
+  {
+    "id": 309,
+    "name": "Girls Winter Jacket",
+    "image": "https://i.pinimg.com/736x/b7/7e/0a/b77e0a6ab1eab3b1552c38ee94bf5f28.jpg",
+    "category": "Jacket",
+    "sizes": ["4-5Y", "6-7Y", "8-9Y", "10-12Y"],
+    "price": 1899,
+    "rating": 4.6
+  },
+  {
+    "id": 310,
+    "name": "Boys Polo Shirt",
+    "image": "https://i.pinimg.com/736x/da/22/a6/da22a6cfdf3ce65900e2e6a468536244.jpg",
+    "category": "Shirt",
+    "sizes": ["2-3Y", "4-5Y", "6-7Y", "8-9Y", "10-12Y"],
+    "price": 699,
+    "rating": 4.4
+  }
+]

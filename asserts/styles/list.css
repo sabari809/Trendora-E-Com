@@ -1,0 +1,121 @@
+.Listcards{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
+    gap: 10px;
+}
+
+.productCard{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 12px;
+    
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.viewMoreBtn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;       
+  background: rgba(52, 62, 65, 0.5); 
+  color: rgb(243, 239, 239);
+  display: none;      
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+
+.productCard img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.imageWrapper:hover .viewMoreBtn {
+  display: flex;   
+}
+
+.ProductDes{
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+}
+
+.ProductDes h4,p{
+    font-weight: 700;
+}
+
+.addToCart{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 0.5rem;
+    gap: 10px;
+}
+
+.addToCart button{
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    height: 40px;
+}
+
+.addToCart button:hover{
+    background: linear-gradient( #8e2de2, #4a00e0);    
+    color: white;
+
+}
+
+.sizes{
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sizes ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.sizes li{
+    border: 1px solid black;
+    padding: 4px;
+}
+
+.sizes li:hover{
+    background-color: black;
+    color: white;
+}
+
+@media screen and (min-width: 721px) and (max-width: 1200px) {
+  .Listcards {
+    grid-template-columns: repeat(auto-fit,minmax(330px,1fr));
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  .Listcards {
+    grid-template-columns: repeat(auto-fit,minmax(330px,1fr));
+  }
+}

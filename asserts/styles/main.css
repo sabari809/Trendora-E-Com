@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg : rgb(19, 18, 18);
+    --text : rgb(226, 231, 235);
+}
+
+nav{
+    padding: 1rem;
+}
+
+nav ul a:hover{    
+    cursor: pointer;
+    color: orangered;
+}
+
+.logo h2{
+    cursor: pointer;
+}
+
+
+.nav-1 {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+}
+
+header{
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+.logo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.logo i{
+    font-size: 1.4em;
+}
+
+.social-list{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    color: rgb(107, 107, 107);
+}
+
+.social-list li:hover{
+    cursor: pointer;
+    color: var(--text);
+}
+
+
+.singin{
+    gap: 1em;
+    display: flex;
+}
+
+.singin a{
+    color: rgb(109, 109, 109);
+    text-decoration: none;
+}
+
+.singin a:hover{
+    color: var(--text);
+}
+
+.handburger{
+    display: flex;
+    gap: 1em;
+    font-size: 1.1rem;
+}
+
+.handburger:hover{
+    cursor: pointer;
+}
+
+.nav-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo-session{
+    position: absolute;
+    top: 5%;
+    right: 0;
+    padding: 1em;
+    color: var(--bg);
+}
+
+.logo-session a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.logo-session a:hover{
+    color: orangered;
+}
+
+.logo-session ul{
+    padding-bottom: 6px;
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-session ul:hover{
+    cursor: pointer;
+}
+
+.logo-session.active ul{
+    display: flex;
+}
+
+footer{
+    padding: 1rem;
+    background-color: var(--bg);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    font-weight: 500;
+    bottom: 1px;
+}
+
+footer li:hover{
+    cursor: pointer;
+    color: orangered;
+}
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-footer ul,.uselinks ul{
+    list-style: none;
+}
+
+
+@media screen and (min-width :720px) and (max-width:1200px) {
+    .handburger{
+        display: none;
+    }  
+
+    .logo-session{
+        position: relative;
+        color: var(--text);
+    }
+    
+    .logo-session ul{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: space-evenly;
+    }
+    
+}
+
+@media screen and (min-width :1200px){
+    .handburger{
+        display: none;
+    }  
+
+    .logo-session{
+        position: relative;
+        color: var(--text);
+    }
+    
+    .logo-session ul{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: space-evenly;
+    }
+}

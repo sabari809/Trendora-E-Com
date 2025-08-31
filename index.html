@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trendora</title>
+
+
+    <link rel="stylesheet" href="asserts/styles/main.css">
+    <link rel="stylesheet" href="asserts/styles/index.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav-1">
+            <ul class="social-list">
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-pinterest"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-linkedin"></i></li>
+            </ul>
+
+            <div class="singin">
+                <h4><a href="login.html">Login</a></h4>
+                <h4><a href="Register.html">Register</a></h4>
+            </div>
+
+        </nav>
+
+        <nav class="nav-2">
+
+            <div class="logo">
+                <i class="fa-solid fa-arrow-trend-up"></i>
+                <h2>Trendora</h2>
+            </div>
+
+            <div class="handburger">
+                <i class="fa-solid fa-cart-shopping cart"></i>
+
+                <i class="fa-solid fa-bars" id="handburger"></i>
+                <i class="fa-solid fa-x close" id="closeBtn" style="display: none;"></i>
+            </div>
+
+            <div class="logo-session" id="logo-session">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#shop">SHOP</a></li>
+                    <li><a href="#about">ABOUT US</a></li>
+                    <li><a href="#blog">BLOG</a></li>
+                    <li><a href="#footer">CONTACT</a></li>
+                    <i class="fa-solid fa-cart-shopping cart" style="font-size: 1.2rem;" onclick="window.location.href='cart.html' "></i>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+    <main class="welcome" id="home">
+        <img src="asserts/images/welcome.png" alt="" height="400px" width="400px">
+        <div class="welcomeText">
+            <p>Design your collection every day</p>
+            <h3> FASHION COLLECTION </h3>
+            <button>SHOP NOW</button>
+        </div>
+
+    </main>
+
+    <marquee behavior="slide" direction="" style="padding: 1em;">
+        <p>Sale is on Live &nbsp;&nbsp;&nbsp; Sale is on Live &nbsp;&nbsp;&nbsp; Sale is on Live &nbsp;&nbsp;&nbsp; Sale
+            is on Live &nbsp;&nbsp;&nbsp; Sale is on Live Sale is on Live &nbsp;&nbsp;&nbsp; Sale is on Live &nbsp;&nbsp;&nbsp; Sale is on Live &nbsp;&nbsp;&nbsp; Sale
+            is on Live &nbsp;&nbsp;&nbsp; Sale is on Live </p>
+    </marquee>
+
+
+
+    <main>
+        <section class="HotDeals" id="shop">
+            <h2>Hot Deals</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="asserts/images/download (3).jpg" alt="">
+                    <p>Casual</p>
+                    <button>SHOP NOW <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+                <div class="card">
+                    <img src="asserts/images/7d34d4c3-abfd-4c6d-816a-62abfc1dc0c7.jpg" alt="">
+                    <p>Function</p>
+                    <button>SHOP NOW <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+                <div class="card">
+                    <img src="asserts/images/3sha.jpg" alt="">
+                    <p>Formal</p>
+                    <button>SHOP NOW <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="featuers" id="about">
+            <h1>Why US</h1>
+            <div class="fCards">
+                <div class="fcard">
+                    <i><i class="fa-solid fa-truck"></i></i>
+                    <h4>FAST DELIVERY</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, quisquam.</p>
+                </div>
+
+                <div class="fcard">
+                    <i><i class="fa-solid fa-headset"></i></i>
+                    <h4>ONLINE SUPPORT 24/7</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, dolor.</p>
+                </div>
+
+                <div class="fcard">
+                    <i><i class="fa-solid fa-handshake-angle"></i></i>
+                    <h4>MONEY RETURN</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, corrupti?</p>
+                </div>
+
+                 <div class="fcard">
+                    <i><i class="fa-solid fa-tag"></i></i>
+                    <h4>MEMBER DISCOUNT</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nulla.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <main>
+
+
+        <section class="Featured" id="blog">
+            <h1>Explore More</h1>
+            <div class="cat-cards">
+                <div class="cat-card cate">
+                    <img src="asserts/images/man.jpg" alt="">
+                    <h3>MENS</h3>
+                    <button onclick="window.location.href='men.html'">SHOP NOW</button>
+                </div>
+
+                <div class="cat-card">
+                    <img src="asserts/images/Women.jpg" alt="">
+                    <h3>WOMENS</h3>
+                    <button onclick="window.location.href='women.html'">SHOP NOW</button>
+                </div>
+
+                <div class="cat-card">
+                    <img src="asserts/images/kid.jpg" alt="">
+                    <h3>KIDS</h3>
+                    <button onclick="window.location.href='kids.html'">SHOP NOW</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="footer" >
+        <div class="links">
+        <div class="about-footer">
+            <h3><i class="fa-solid fa-arrow-trend-up"></i>
+                Trendora</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="contact-footer" >
+            <ul>
+                <li>Whatsapp +9928329831</li>
+                <li>LAN :t87u90i890</li>
+                <li>Chennai : 789087</li>
+            </ul>
+        </div>
+
+        <div class="uselinks">
+            <ul>
+                <li>Community</li>
+                <li>Terms & policy</li>
+                <li>Meta Links</li>
+            </ul>
+        </div>
+        </div>
+
+        <p>&copy; By Terndora @2024 - Terms and GuidLines</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
