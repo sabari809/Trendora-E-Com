@@ -1,24 +1,24 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
-    --bg : rgb(19, 18, 18);
-    --text : rgb(226, 231, 235);
+:root {
+    --bg: rgb(19, 18, 18);
+    --text: rgb(226, 231, 235);
 }
 
-nav{
+nav {
     padding: 1rem;
 }
 
-nav ul a:hover{    
+nav ul a:hover {
     cursor: pointer;
     color: orangered;
 }
 
-.logo h2{
+.logo h2 {
     cursor: pointer;
 }
 
@@ -26,89 +26,167 @@ nav ul a:hover{
 .nav-1 {
     position: sticky;
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;
     align-items: center;
 }
 
-header{
+header {
     background-color: var(--bg);
     color: var(--text);
 }
 
-.logo{
+.logo {
     display: flex;
     gap: 10px;
     align-items: center;
 }
 
-.logo i{
+.logo i {
     font-size: 1.4em;
 }
 
-.social-list{
+.social-list {
     list-style: none;
     display: flex;
     gap: 10px;
     color: rgb(107, 107, 107);
 }
 
-.social-list li:hover{
+.social-list li:hover {
     cursor: pointer;
     color: var(--text);
 }
 
 
-.singin{
+.singin {
     gap: 1em;
     display: flex;
 }
 
-.singin a{
+.singin a {
     color: rgb(109, 109, 109);
     text-decoration: none;
 }
 
-.singin a:hover{
+.singin a:hover {
     color: var(--text);
 }
 
-.handburger{
+.handburger {
     display: flex;
     gap: 1em;
     font-size: 1.1rem;
 }
 
-.handburger:hover{
+.handburger i {
+    z-index: 10000;
+}
+
+.handburger:hover {
     cursor: pointer;
 }
 
-.nav-2{
+.nav-2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 
-.logo-session{
-    position: absolute;
-    background-color: inherit;
-    top: 25%;
-    right: 0;
-    padding: 1em;
+.logo-session {
+    position: fixed;
+    top: 10%;
+    right: -70%;
+    width: 50%;
+    height: 100vh;
+    background-color: var(--bg);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 2em 1em;
+    transition: right 0.3s ease;
     z-index: 1000;
-    color: var(--bg);
+    overflow-y: auto;
 }
 
-.logo-session a{
+.logo-session.active {
+    right: 0;
+}
+
+.logo-session ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.logo-session a {
+    color: var(--text);
+    font-size: 1.2rem;
+}
+
+
+.logo-session .search-box {
+    display: none;
+}
+
+.search-box {
+    position: relative;
+}
+
+.search-box input {
+    width: 250px;
+    border-radius: 8px;
+    height: 25px;
+    padding: 3px;
+}
+
+.suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--bg);
+    border: 1px solid #999696;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 999;
+}
+
+
+.suggestions div {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.suggestions div:hover {
+    background: #f0f0f0;
+    color: black;
+}
+
+.matchinglist {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.rightNavbar2{
+    display: none;
+    align-items: center;
+}
+
+.logo-session a {
     color: inherit;
     text-decoration: none;
 }
 
-.logo-session a:hover{
+.logo-session a:hover {
     color: orangered;
 }
 
-.logo-session ul{
+.logo-session ul {
     padding-bottom: 6px;
     list-style: none;
     display: none;
@@ -118,15 +196,15 @@ header{
     align-items: center;
 }
 
-.logo-session ul:hover{
+.logo-session ul:hover {
     cursor: pointer;
 }
 
-.logo-session.active ul{
+.logo-session.active ul {
     display: flex;
 }
 
-footer{
+footer {
     padding: 1rem;
     background-color: var(--bg);
     color: var(--text);
@@ -138,60 +216,108 @@ footer{
     bottom: 1px;
 }
 
-footer li:hover{
+footer li:hover {
     cursor: pointer;
     color: orangered;
 }
 
-.links{
+.links {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.about-footer{
+.about-footer {
     display: flex;
     flex-direction: column;
 }
 
-.contact-footer ul,.uselinks ul{
+.contact-footer ul,
+.uselinks ul {
     list-style: none;
 }
 
 
 @media screen and (min-width :720px) and (max-width:1200px) {
-    .handburger{
+    .handburger {
         display: none;
-    }  
-
-    .logo-session{
-        position: relative;
-        color: var(--text);
     }
-    
-    .logo-session ul{
+
+    .logo-session ul {
         display: flex;
         flex-direction: row;
         gap: 20px;
         justify-content: space-evenly;
     }
+
+    .logo-session {
+        position: relative;
+        right: 0;
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
     
+   .rightNavbar2{
+    display: flex;
+    align-items: center;
+   }
+
+
 }
 
-@media screen and (min-width :1200px){
-    .handburger{
+@media screen and (min-width :1200px) {
+    .handburger {
         display: none;
-    }  
+    }
 
-    .logo-session{
+    .logo-session {
+        position: relative;
+        right: 0;
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .logo-session .search-box {
+        display: block;
+    }
+
+    .logo-session {
         position: relative;
         color: var(--text);
     }
-    
-    .logo-session ul{
+
+    .logo-session ul {
         display: flex;
         flex-direction: row;
         gap: 20px;
         justify-content: space-evenly;
     }
+
+
+   .rightNavbar2{
+    display: flex;
+    align-items: center;
+   }
+
+   .matchinglist{
+    justify-content: space-evenly;
+    width: auto;
+    overflow-x: hidden;
+   }
+
+   .search-box input{
+        height: 30px;
+   }
+
+   .search-box input,.search-box div{
+        width: 400px;
+   }
 }
+

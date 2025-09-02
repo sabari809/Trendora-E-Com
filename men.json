@@ -3,7 +3,7 @@
     "id": 101,
     "name": "Oxford Button-Down Shirt",
     "image" : "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRCMsre8ga5ggsHnVG5AQjy8nDBtSuyjI-Pf5C5Kcr9H4ewRYzpM7b8mPDqBzm9Oeni2oGnoKYKxQhZFRcG3btqZl_xZMZ_Ryr7euyrvTY",
-    "category": "Shirt",
+    "category": "men",
     "sizes": ["S", "M", "L", "XL", "XXL"],
     "price": 1299,
     "rating": 4.6
@@ -12,7 +12,7 @@
     "id": 102,
     "name": "Casual Linen-Cotton Shirt",
     "image" : "https://d118ps6mg0w7om.cloudfront.net/media/catalog/product/2/_/fit-in/1000x1333/2_mfs-14888-s-141-light-olive_2.jpg",
-    "category": "Shirt",
+    "category": "men",
     "sizes": ["S", "M", "L", "XL", "XXL"],
     "price": 1499,
     "rating": 4.5
@@ -21,7 +21,7 @@
     "id": 103,
     "name": "Slim Fit Check Shirt",
     "image" : "https://i.pinimg.com/736x/7d/84/58/7d8458164266d27b1f48d9fca5c1899f.jpg",
-    "category": "Shirt",
+    "category": "men",
     "sizes": ["S", "M", "L", "XL", "XXL"],
     "price": 1099,
     "rating": 4.3
@@ -30,7 +30,7 @@
     "id": 104,
     "name": "Denim Utility Shirt",
     "image" : "https://i.pinimg.com/1200x/7a/9d/ee/7a9dee59b7e60eaca08b7883583411d7.jpg",
-    "category": "Shirt",
+    "category": "men",
     "sizes": ["S", "M", "L", "XL", "XXL"],
     "price": 1399,
     "rating": 4.4
@@ -39,7 +39,7 @@
     "id": 105,
     "name": "Slim Fit Jeans (Dark Indigo)",
     "image" : "https://thehouseofrare.com/cdn/shop/files/RADLEYBLUE_2.webp?v=1749639337&width=540",
-    "category": "Jeans",
+    "category": "men",
     "sizes": ["28", "30", "32", "34", "36", "38"],
     "price": 1799,
     "rating": 4.5
@@ -48,7 +48,7 @@
     "id": 106,
     "name": "Tapered Black Jeans",
     "image" : "https://pantproject.com/cdn/shop/files/DSC6918.jpg?v=1734459275",
-    "category": "Jeans",
+    "category": "men",
     "sizes": ["28", "30", "32", "34", "36", "38"],
     "price": 1599,
     "rating": 4.4
@@ -57,7 +57,7 @@
     "id": 107,
     "name": "Straight Fit Jeans",
     "image" : "https://assets.digitalcontent.marksandspencer.app/image/upload/w_1008,h_1319,q_auto,f_auto,e_sharpen/SD_03_T17_1663M_XB_X_EC_0",
-    "category": "Jeans",
+    "category": "men",
     "sizes": ["28", "30", "32", "34", "36", "38"],
     "price": 1699,
     "rating": 4.2
@@ -66,7 +66,7 @@
     "id": 108,
     "name": "Classic Navy Blazer",
     "image" : "https://blackberrys.com/cdn/shop/files/Formal_Navy_Stripe_Blazer_Nios-CJ002444N1-image1.jpg?v=1733818448&width=400",
-    "category": "Blazer",
+    "category": "men",
     "sizes": ["S", "M", "L", "XL", "XXL"],
     "price": 2499,
     "rating": 4.6
@@ -75,7 +75,7 @@
     "id": 109,
     "name": "Charcoal Textured Blazer",
     "image" : "https://i.pinimg.com/1200x/86/ac/ae/86acae8d4b18954b7a1ce84a10123654.jpg",
-    "category": "Blazer",
+    "category": "men",
     "sizes": ["S", "M", "L", "XL", "XXL"],
     "price": 2699,
     "rating": 4.5
@@ -84,7 +84,7 @@
     "id": 110,
     "name": "Mauve Casual Blazer",
     "image" : "https://i.pinimg.com/736x/50/8b/85/508b85c7879ef5bdae3d5cb3b4dcf8b6.jpg",
-    "category": "Blazer",
+    "category": "men",
     "sizes": ["S", "M", "L", "XL", "XXL"],
     "price": 2399,
     "rating": 4.3

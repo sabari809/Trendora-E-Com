@@ -40,10 +40,13 @@ fetch("./men.json")
 
       btn.addEventListener("click", () => {
         let cart = JSON.parse(localStorage.getItem("cart")) || [];
-        cart.push(product);
-        localStorage.setItem("cart", JSON.stringify(cart));
-        console.log("Item added successfully", cart);
-      });
+          cart.push(product);
+          localStorage.setItem("cart", JSON.stringify(cart));
+          console.log("Item added successfully", cart);
+          
+          alert("Product Added")
+        } 
+      );
     });
 
     const viewBtns = document.querySelectorAll(".viewMoreBtn");
@@ -58,3 +61,4 @@ fetch("./men.json")
   .catch((err) => {
     console.error("Fetchint the product has been failed try again", err);
   });
+

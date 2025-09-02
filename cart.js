@@ -30,7 +30,7 @@ function showCart() {
 
             <div class="quantity">
               <button class="minus">−</button>
-              <p>1</p>
+              <p>${quantity}</p>
               <button class="plus">+</button>
             </div>
           </div>

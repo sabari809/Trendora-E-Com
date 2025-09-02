@@ -26,7 +26,7 @@
 
             <div class="singin">
                 <h4><a href="login.html">Login</a></h4>
-                <h4><a href="Register.html">Register</a></h4>
+                <h4><a href="signup.html">Register</a></h4>
             </div>
 
         </nav>
@@ -39,25 +39,44 @@
             </div>
 
             <div class="handburger">
+                <div class="search-box">
+                    <input type="text" class="search-box" id="searchInputMain" placeholder="Search products...">
+                    <div id="suggestionsMain" class="suggestions"></div>
+                </div>
+
                 <i class="fa-solid fa-cart-shopping cart"></i>
 
                 <i class="fa-solid fa-bars" id="handburger"></i>
                 <i class="fa-solid fa-x close" id="closeBtn" style="display: none;"></i>
+
             </div>
 
-            <div class="logo-session" id="logo-session">
-                <ul>
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#shop">SHOP</a></li>
-                    <li><a href="#about">ABOUT US</a></li>
-                    <li><a href="#blog">BLOG</a></li>
-                    <li><a href="#footer">CONTACT</a></li>
-                    <i class="fa-solid fa-cart-shopping cart" style="font-size: 1.2rem;" onclick="window.location.href='cart.html' "></i>
-                </ul>
-            </div>
 
+            <div class="rightNavbar2">
+
+                <div class="search-box">
+                    <input type="text" id="searchInputMenu" placeholder="Search products...">
+                    <div id="suggestionsMenu" class="suggestions"></div>
+                </div>
+
+                <div class="logo-session" id="logo-session">
+
+                    <ul>
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#shop">SHOP</a></li>
+                        <li><a href="#about">ABOUT US</a></li>
+                        <li><a href="#blog">BLOG</a></li>
+                        <li><a href="#footer">CONTACT</a></li>
+                        <i class="fa-solid fa-cart-shopping cart" style="font-size: 1.2rem;"
+                            onclick="window.location.href='cart.html' "></i>
+                    </ul>
+                </div>
+
+            </div>
         </nav>
     </header>
+
+    
 
     <main class="welcome" id="home">
         <img src="asserts/images/welcome.png" alt="" height="400px" width="400px">
@@ -71,7 +90,8 @@
 
     <marquee behavior="slide" direction="" style="padding: 1em;">
         <p>Sale is on Live &nbsp;&nbsp;&nbsp; Sale is on Live &nbsp;&nbsp;&nbsp; Sale is on Live &nbsp;&nbsp;&nbsp; Sale
-            is on Live &nbsp;&nbsp;&nbsp; Sale is on Live Sale is on Live &nbsp;&nbsp;&nbsp; Sale is on Live &nbsp;&nbsp;&nbsp; Sale is on Live &nbsp;&nbsp;&nbsp; Sale
+            is on Live &nbsp;&nbsp;&nbsp; Sale is on Live Sale is on Live &nbsp;&nbsp;&nbsp; Sale is on Live
+            &nbsp;&nbsp;&nbsp; Sale is on Live &nbsp;&nbsp;&nbsp; Sale
             is on Live &nbsp;&nbsp;&nbsp; Sale is on Live </p>
     </marquee>
 
@@ -84,19 +104,22 @@
                 <div class="card">
                     <img src="asserts/images/download (3).jpg" alt="">
                     <p>Casual</p>
-                    <button>SHOP NOW <i class="fa-solid fa-arrow-right"></i></button>
+                    <button onclick="window.location.href='women.html'">SHOP NOW <i
+                            class="fa-solid fa-arrow-right"></i></button>
                 </div>
 
                 <div class="card">
                     <img src="asserts/images/7d34d4c3-abfd-4c6d-816a-62abfc1dc0c7.jpg" alt="">
                     <p>Function</p>
-                    <button>SHOP NOW <i class="fa-solid fa-arrow-right"></i></button>
+                    <button onclick="window.location.href='women.html'">SHOP NOW <i
+                            class="fa-solid fa-arrow-right"></i></button>
                 </div>
 
                 <div class="card">
                     <img src="asserts/images/3sha.jpg" alt="">
                     <p>Formal</p>
-                    <button>SHOP NOW <i class="fa-solid fa-arrow-right"></i></button>
+                    <button onclick="window.location.href='women.html'">SHOP NOW <i
+                            class="fa-solid fa-arrow-right"></i></button>
                 </div>
             </div>
         </section>
@@ -122,7 +145,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, corrupti?</p>
                 </div>
 
-                 <div class="fcard">
+                <div class="fcard">
                     <i><i class="fa-solid fa-tag"></i></i>
                     <h4>MEMBER DISCOUNT</h4>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nulla.</p>
@@ -160,29 +183,29 @@
 
     </main>
 
-    <footer id="footer" >
+    <footer id="footer">
         <div class="links">
-        <div class="about-footer">
-            <h3><i class="fa-solid fa-arrow-trend-up"></i>
-                Trendora</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
-        </div>
+            <div class="about-footer">
+                <h3><i class="fa-solid fa-arrow-trend-up"></i>
+                    Trendora</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
 
-        <div class="contact-footer" >
-            <ul>
-                <li>Whatsapp +9928329831</li>
-                <li>LAN :t87u90i890</li>
-                <li>Chennai : 789087</li>
-            </ul>
-        </div>
+            <div class="contact-footer">
+                <ul>
+                    <li>Whatsapp +9928329831</li>
+                    <li>LAN :t87u90i890</li>
+                    <li>Chennai : 789087</li>
+                </ul>
+            </div>
 
-        <div class="uselinks">
-            <ul>
-                <li>Community</li>
-                <li>Terms & policy</li>
-                <li>Meta Links</li>
-            </ul>
-        </div>
+            <div class="uselinks">
+                <ul>
+                    <li>Community</li>
+                    <li>Terms & policy</li>
+                    <li>Meta Links</li>
+                </ul>
+            </div>
         </div>
 
         <p>&copy; By Terndora @2024 - Terms and GuidLines</p>
@@ -190,4 +213,5 @@
 
     <script src="index.js"></script>
 </body>
+
 </html>

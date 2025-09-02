@@ -16,34 +16,66 @@
     <div class="gridContainer">
 
 
-        <header>
+            <header>
+        <nav class="nav-1">
+            <ul class="social-list">
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-pinterest"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-linkedin"></i></li>
+            </ul>
 
-            <nav class="nav-2">
+            <div class="singin">
+                <h4><a href="login.html">Login</a></h4>
+                <h4><a href="signup.html">Register</a></h4>
+            </div>
 
-                <div class="logo">
-                    <i class="fa-solid fa-arrow-trend-up"></i>
-                    <h2>Trendora</h2>
+        </nav>
+
+        <nav class="nav-2">
+
+            <div class="logo">
+                <i class="fa-solid fa-arrow-trend-up"></i>
+                <h2>Trendora</h2>
+            </div>
+
+            <div class="handburger">
+                <div class="search-box">
+                    <input type="text" class="search-box" id="searchInputMain" placeholder="Search products...">
+                    <div id="suggestionsMain" class="suggestions"></div>
                 </div>
 
-                <div class="handburger">
-                    <i class="fa-solid fa-cart-shopping cart"></i>
+                <i class="fa-solid fa-cart-shopping cart"></i>
 
-                    <i class="fa-solid fa-bars" id="handburger"></i>
-                    <i class="fa-solid fa-x close" id="closeBtn" style="display: none;"></i>
+                <i class="fa-solid fa-bars" id="handburger"></i>
+                <i class="fa-solid fa-x close" id="closeBtn" style="display: none;"></i>
+
+            </div>
+
+
+            <div class="rightNavbar2">
+
+                <div class="search-box">
+                    <input type="text" id="searchInputMenu" placeholder="Search products...">
+                    <div id="suggestionsMenu" class="suggestions"></div>
                 </div>
 
                 <div class="logo-session" id="logo-session">
+
                     <ul>
                         <li><a href="#home">HOME</a></li>
                         <li><a href="#shop">SHOP</a></li>
                         <li><a href="#about">ABOUT US</a></li>
+                        <li><a href="#blog">BLOG</a></li>
+                        <li><a href="#footer">CONTACT</a></li>
                         <i class="fa-solid fa-cart-shopping cart" style="font-size: 1.2rem;"
                             onclick="window.location.href='cart.html' "></i>
                     </ul>
                 </div>
 
-            </nav>
-        </header>
+            </div>
+        </nav>
+    </header>
 
         <div class="productDetails">
             Fetching Your Products...

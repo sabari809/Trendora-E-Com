@@ -23,3 +23,66 @@ closeBtn.addEventListener("click",()=>{
     closeBtn.style.display = "none"
     handburger.style.display = "block"
 })
+
+const AddToaster = document.querySelectorAll(".cartBtn").forEach((btn)=>{
+    btn.addEventListener("click",()=>{
+        alert("Product Addded Successfully")
+    })
+})  
+
+
+document.addEventListener("DOMContentLoaded", () => {
+const searchInputMain = document.getElementById("searchInputMain");
+const suggestionsMain = document.getElementById("suggestionsMain");
+
+const searchInputMenu = document.getElementById("searchInputMenu");
+const suggestionsMenu = document.getElementById("suggestionsMenu");
+
+
+    const jsonFiles = ["./men.json", "./women.json", "./kids.json"];
+    let allProducts = [];
+
+    Promise.all(jsonFiles.map(url => fetch(url).then(res => res.json())))
+        .then(results => allProducts = results.flat())
+        .catch(err => console.error(err));
+
+    function debounce(func, delay) {
+        let timeout;
+        return function(...args){
+            clearTimeout(timeout);
+            timeout = setTimeout(() => func.apply(this, args), delay);
+        }
+    }
+
+
+function searchProducts(inputEl, suggestionsEl) {
+    const query = inputEl.value.trim().toLowerCase();
+    console.log("Query:", query);
+    console.log("All products:", allProducts);
+
+    if (!suggestionsEl) return;
+    suggestionsEl.innerHTML = "";
+    if(query.length === 0) return;
+
+    const matches = allProducts.filter(item => item.name.toLowerCase().includes(query));
+    console.log("Matches:", matches);
+
+    matches.forEach(item => {
+        const div = document.createElement("div");
+        div.classList.add("matchinglist")
+        div.innerHTML =  `${item.name} <img src=${item.image} height=50px weight=50px/>`;
+        suggestionsEl.appendChild(div);
+        div.addEventListener("click", () => {
+            window.location.href = `product.html?id=${item.id}&category=${item.category}`;
+            inputEl.value = item.name;
+            suggestionsEl.innerHTML = "";
+        });
+    });
+}
+
+
+
+    searchInputMain.addEventListener("input", debounce(() => searchProducts(searchInputMain, suggestionsMain), 300));
+    searchInputMenu.addEventListener("input", debounce(() => searchProducts(searchInputMenu, suggestionsMenu), 300));
+
+});
