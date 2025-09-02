@@ -13,6 +13,7 @@ carticon.addEventListener("click",()=>{
 })
 
 handburger.addEventListener("click",()=>{
+    document.querySelector(".rightNavbar2").style.display = "block"
     logoSession.classList.add("active")
     handburger.style.display = "none"
     closeBtn.style.display = "block"
@@ -24,11 +25,7 @@ closeBtn.addEventListener("click",()=>{
     handburger.style.display = "block"
 })
 
-const AddToaster = document.querySelectorAll(".cartBtn").forEach((btn)=>{
-    btn.addEventListener("click",()=>{
-        alert("Product Addded Successfully")
-    })
-})  
+
 
 
 document.addEventListener("DOMContentLoaded", () => {

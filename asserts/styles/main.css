@@ -126,11 +126,6 @@ header {
     font-size: 1.2rem;
 }
 
-
-.logo-session .search-box {
-    display: none;
-}
-
 .search-box {
     position: relative;
 }
@@ -194,6 +189,10 @@ header {
     gap: 10px;
     justify-content: center;
     align-items: center;
+}
+
+.rightNavbar2 .search-box{
+    display: none;
 }
 
 .logo-session ul:hover {
@@ -270,10 +269,13 @@ footer li:hover {
 }
 
 @media screen and (min-width :1200px) {
-    .handburger {
+    .handburger i{
         display: none;
     }
 
+.search-box {
+    display: block;
+}
     .logo-session {
         position: relative;
         right: 0;
