@@ -94,9 +94,7 @@ function showCart() {
 
   prizeContainer.appendChild(finalPrize);
 
-  const btn = document
-    .getElementById("placeOrder")
-    .addEventListener("click", () => {
+  const btn = document.getElementById("placeOrder").addEventListener("click", () => {
       const users = JSON.parse(localStorage.getItem("users"));
 
       if (users) {
@@ -104,6 +102,7 @@ function showCart() {
 
         localStorage.removeItem("cart");
 
+        window.location.reload()
         showCart();
       } else {
         alert("please login First");

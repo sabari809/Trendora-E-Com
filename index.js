@@ -32,10 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
 const searchInputMain = document.getElementById("searchInputMain");
 const suggestionsMain = document.getElementById("suggestionsMain");
 
-const searchInputMenu = document.getElementById("searchInputMenu");
-const suggestionsMenu = document.getElementById("suggestionsMenu");
-
-
     const jsonFiles = ["./men.json", "./women.json", "./kids.json"];
     let allProducts = [];
 
@@ -43,17 +39,17 @@ const suggestionsMenu = document.getElementById("suggestionsMenu");
         .then(results => allProducts = results.flat())
         .catch(err => console.error(err));
 
-    function debounce(func, delay) {
+    function debounce(fun, delay) {
         let timeout;
         return function(...args){
             clearTimeout(timeout);
-            timeout = setTimeout(() => func.apply(this, args), delay);
+            timeout = setTimeout(() => fun.apply(this, args), delay);
         }
     }
 
 
-function searchProducts(inputEl, suggestionsEl) {
-    const query = inputEl.value.trim().toLowerCase();
+function searchProducts(inputvalue, suggestionsEl) {
+    const query = inputvalue.value.trim().toLowerCase();
     console.log("Query:", query);
     console.log("All products:", allProducts);
 
@@ -79,7 +75,6 @@ function searchProducts(inputEl, suggestionsEl) {
 
 
 
-    searchInputMain.addEventListener("input", debounce(() => searchProducts(searchInputMain, suggestionsMain), 300));
-    searchInputMenu.addEventListener("input", debounce(() => searchProducts(searchInputMenu, suggestionsMenu), 300));
+searchInputMain.addEventListener("input", debounce(() => searchProducts(searchInputMain, suggestionsMain), 300));
 
 });
