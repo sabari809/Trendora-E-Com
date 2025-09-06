@@ -98,11 +98,7 @@ function showCart() {
       const users = JSON.parse(localStorage.getItem("users"));
 
       if (users) {
-        alert("Order Place successfully");
-
-        localStorage.removeItem("cart");
-
-        window.location.reload()
+        window.location.href = "payment.html"
         showCart();
       } else {
         alert("please login First");

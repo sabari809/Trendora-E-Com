@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="asserts/styles/main.css">
+</head>
+<body>
+
+    <div class="mainContainer">
+    <header>
+        <nav class="nav-1">
+            <ul class="social-list">
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-pinterest"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-linkedin"></i></li>
+            </ul>
+
+            <div class="singin">
+                <h4><a href="login.html">Login</a></h4>
+                <h4><a href="signup.html">Register</a></h4>
+            </div>
+
+        </nav>
+
+        <nav class="nav-2">
+
+            <div class="logo">
+                <i class="fa-solid fa-arrow-trend-up"></i>
+                <h2>Trendora</h2>
+            </div>
+            
+
+            <div class="handburger">
+                <div class="search-box">
+                    <input type="text" class="search-box" id="searchInputMain" placeholder="Search products...">
+                    <div id="suggestionsMain" class="suggestions"></div>
+                </div>
+
+                <i class="fa-solid fa-cart-shopping cart"></i>
+
+                <i class="fa-solid fa-bars" id="handburger"></i>
+                <i class="fa-solid fa-x close" id="closeBtn" style="display: none;"></i>
+
+            </div>
+
+
+            <div class="rightNavbar2">
+
+
+                <div class="logo-session" id="logo-session">
+
+                    <ul>
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#shop">SHOP</a></li>
+                        <li><a href="#about">ABOUT US</a></li>
+                        <li><a href="#blog">BLOG</a></li>
+                        <li><a href="#footer">CONTACT</a></li>
+                        <i class="fa-solid fa-cart-shopping cart" style="font-size: 1.2rem;"
+                            onclick="window.location.href='cart.html' "></i>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <div id="toast"></div>
+
+    <div class="container">
+        <div class="separation">
+
+            <div class="paymentmode">
+                <button id="card">Proceed with Card</button>
+                <button id="gpay">Gpay</button>
+            </div>
+            <div class="cardDetails">
+                <input type="text" placeholder="Name on Card">
+                <input type="number" placeholder="Card Number">
+                <div class="secureNumber">  
+                    <input type="number" placeholder="MM/YY">
+                    <input type="number" placeholder="CVV">
+                </div>
+            </div>
+        </div>
+            
+        <button id="completePayment"><img src="" alt="">Procced to Pay</button>
+    </div>
+
+
+        <footer id="footer">
+        <div class="links">
+            <div class="about-footer">
+                <h3><i class="fa-solid fa-arrow-trend-up"></i>
+                    Trendora</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+
+            <div class="contact-footer">
+                <ul>
+                    <li>Whatsapp +9928329831</li>
+                    <li>LAN :t87u90i890</li>
+                    <li>Chennai : 789087</li>
+                </ul>
+            </div>
+
+            <div class="uselinks">
+                <ul>
+                    <li>Community</li>
+                    <li>Terms & policy</li>
+                    <li>Meta Links</li>
+                </ul>
+            </div>
+        </div>
+
+        <p>&copy; By Terndora @2024 - Terms and GuidLines</p>
+    </footer>
+</div>
+    <script src="payment.js"></script>
+</body>
+</html>
